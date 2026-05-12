@@ -74,6 +74,9 @@ public class WorkFlow_Service
 
     public async Task<DTO_Response<string>> RejectAsync(DTO_RejectRequest dto)
     {
+        if (string.IsNullOrWhiteSpace(dto.Reason))
+            return Fail<string>((int)StatusCode.NotAcceptable, "Rejection reason is required.");
+
         await _uow.BeginTransactionAsync();
         try
         {

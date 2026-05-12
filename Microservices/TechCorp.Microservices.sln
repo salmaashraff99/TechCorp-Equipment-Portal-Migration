@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification_Service", "Not
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGateway", "APIGateway\APIGateway.csproj", "{C2D5EB21-02A6-482F-96C4-69354D1DCB6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equipment_Service.Tests", "Equipment_Service.Tests\Equipment_Service.Tests.csproj", "{382C198F-66F6-47BE-B9EF-CCD928D25B15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,18 @@ Global
 		{C2D5EB21-02A6-482F-96C4-69354D1DCB6F}.Release|x64.Build.0 = Release|Any CPU
 		{C2D5EB21-02A6-482F-96C4-69354D1DCB6F}.Release|x86.ActiveCfg = Release|Any CPU
 		{C2D5EB21-02A6-482F-96C4-69354D1DCB6F}.Release|x86.Build.0 = Release|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Debug|x64.Build.0 = Debug|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Debug|x86.Build.0 = Debug|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Release|x64.ActiveCfg = Release|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Release|x64.Build.0 = Release|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Release|x86.ActiveCfg = Release|Any CPU
+		{382C198F-66F6-47BE-B9EF-CCD928D25B15}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

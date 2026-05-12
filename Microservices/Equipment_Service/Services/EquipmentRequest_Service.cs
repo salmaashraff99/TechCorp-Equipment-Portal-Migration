@@ -37,6 +37,9 @@ public class EquipmentRequest_Service
 
     public async Task<DTO_Response<string>> SubmitAsync(DTO_SubmitRequest dto)
     {
+        if (string.IsNullOrWhiteSpace(dto.Justification) || dto.Justification.Trim().Length < 10)
+            return Fail<string>((int)StatusCode.NotAcceptable, "Justification is required (minimum 10 characters).");
+
         await _uow.BeginTransactionAsync();
         try
         {
@@ -47,6 +50,9 @@ public class EquipmentRequest_Service
             var manager = await _uow.Employees.GetLineManagerAsync(dto.RequesterId);
             if (manager is null)
                 return Fail<string>((int)StatusCode.NotAcceptable, "No line manager found for this employee. Cannot submit request.");
+
+            if (manager.Id == dto.RequesterId)
+                return Fail<string>((int)StatusCode.NotAcceptable, "Requester cannot be their own line manager.");
 
             var equipmentType = await _uow.Equipment.GetByIdAsync(dto.EquipmentTypeId);
             if (equipmentType is null)
