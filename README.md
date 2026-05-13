@@ -303,3 +303,28 @@ Adding a new downstream service requires one JSON route block in `ocelot.json` �
 | xUnit | 2.9 | Test framework |
 | FluentAssertions | 6.12 | Readable assertion syntax |
 | SQL Server | — | Database (existing TechCorp infrastructure) |
+
+---
+
+## 🤖 Built with Agentic AI Development
+
+This project was built using **Claude Code** — Anthropic's terminal-based agentic AI development tool.
+
+### What this means:
+- Claude Code ran directly inside the project folder
+- It read, analyzed, wrote, and fixed code autonomously
+- Every build error was fixed without manual intervention
+- The entire migration took hours instead of weeks
+
+### How it was used:
+See [CLAUDE.md](CLAUDE.md) for the complete breakdown
+of what Claude Code did vs what the developer did.
+
+### The key skill demonstrated:
+Not just *using* AI — but *directing* AI:
+- Designing architecture before prompting
+- Reviewing and correcting AI output
+- Understanding every line of generated code
+- Knowing when AI is wrong and fixing it
+
+> "The developer is the architect. Claude Code is the implementation assistant."
